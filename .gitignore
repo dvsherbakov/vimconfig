@@ -1,0 +1,48 @@
+# Neovim specific ignores
+
+# Plugin data and cache
+lazy-lock.json
+.lazy/
+plugin/
+spell/
+.netrwhist
+*.log
+
+# Session files
+Session.vim
+.session
+
+# Swap files
+*.swp
+*.swo
+*~
+
+# Undo files
+*.un~
+
+# Backup files
+*.backup
+*.bak
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE/Editor specific
+.vscode/
+.idea/
+
+# Personal/sensitive files
+*.local
+personal/
+private/
+
+# Compiled lua
+*.luac
+
+# Plugin manager cache
+packer_compiled.lua
