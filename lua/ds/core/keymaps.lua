@@ -23,3 +23,14 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
 keymap.set("n", "<leader>bb", "<cmd>BufferLinePick<CR>", { desc = "Pick buffer" })
+
+-- Move hidlating box with J and K
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- Move text up and down
+keymap.set("n", "<A-j>", "<Esc>:m .+1<CR>==gi")
+keymap.set("n", "<A-k>", "<Esc>:m .-2<CR>==gi")
+
+--clear hidlating box
+keymap.set("n", "<leader>cc", "<cmd>nohlsearch<CR>", { noremap = true, silent = true, desc = "Clear hidlating box" })

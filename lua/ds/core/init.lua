@@ -1,2 +1,2 @@
-require("josean.core.options")
-require("josean.core.keymaps")
+require("ds.core.options")
+require("ds.core.keymaps")
